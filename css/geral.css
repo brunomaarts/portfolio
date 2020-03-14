@@ -7274,7 +7274,7 @@ header .box-menu {
     right: 0px;
     clear: both;
     border-radius: 3px;
-    background-color: #283891;
+    background-color: #fff;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
