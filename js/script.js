@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
 	$(window).scroll(function () {
 		var topPos = $(window).scrollTop();
 		if (topPos > 10) {
