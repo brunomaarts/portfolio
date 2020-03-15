@@ -7551,6 +7551,30 @@ header.active-nav .menu {
     width: 100%;
     display: block;
     margin: 0px auto; }
+  .landpage .bg-landig {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(6px);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100vh; }
+    @media screen and (min-width: 992px) {
+      .landpage .bg-landig {
+        display: none; } }
+  .landpage .content-land {
+    background-color: rgba(18, 33, 71, 0.6);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .landpage .title-land .content-title {
     display: block;
     margin-bottom: 40px; }
@@ -7568,9 +7592,17 @@ header.active-nav .menu {
       line-height: 25px; }
       .landpage .title-land .content-title p strong {
         font-weight: bold; }
+  @media screen and (max-width: 768px) {
+    .landpage .title-land a {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 22px;
+      justify-content: center;
+      text-align: center;
+      padding: 5px 15px; } }
   .landpage .col-img {
     display: none; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
       .landpage .col-img {
         display: block; } }
 
