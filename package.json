@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Site de portifólio Bruno Ricardo",
   "main": "gulpfile.js",
   "scripts": {
@@ -9,12 +9,11 @@
   "author": "Bruno Ricardo",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.5.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sass": "^4.1.0"
   }
 }
