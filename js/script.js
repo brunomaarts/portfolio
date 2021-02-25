@@ -1,21 +1,31 @@
-jQuery(document).ready(function () {
-	$(window).scroll(function () {
-		var topPos = $(window).scrollTop();
+function calculateAge(birthday) {
+	let ageDifMs = Date.now() - birthday;
+	let ageDate = new Date(ageDifMs);
+	return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+$(function() {
+
+	$(window).on("scroll", function () {
+		let topPos = $(window).scrollTop();
 		if (topPos > 10) {
 			$('header').addClass('active');
 		} else {
 			$('header').removeClass('active');
 		}
 	});
-
+	
 	$('.box-menu').on('click', function () {
 		$('header').toggleClass('active-nav');
 	});
-
+	
+	$("#main-years").text(calculateAge(new Date('1997-10-17')))
+	$("#main-dev-years").text(new Date().getFullYear() - 2016)
+	
 	$('a[href*="#"]')
 		.not('[href="#"]')
 		.not('[href="#0"]')
-		.click(function (event) {
+		.on('click', function (event) {
 			if (
 				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
 				&&

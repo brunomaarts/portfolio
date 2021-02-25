@@ -7,7 +7,7 @@ $tablet: 992px
 $normal: 1200px
 
 $branco: #fff
-$azul-ceu: #122147
+$azul-ceu: #132147
 $azul-escuro: #34495E
 $azul-claro: #2574A9
 
@@ -30,11 +30,11 @@ $azul-claro: #2574A9
 	transition: ($atributo $tempo $suavidade)
 
 =gradient($angle,$gradient1, $gradient2)
-	background-color: $gradient2 
+	background-color: $gradient2
 	background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
 	background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
-	background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
-	background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
-	background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
-	background-image:         linear-gradient($angle, $gradient1, $gradient2)
+	background-image: -moz-linear-gradient($angle, $gradient1, $gradient2)
+	background-image: -ms-linear-gradient($angle, $gradient1, $gradient2)
+	background-image: -o-linear-gradient($angle, $gradient1, $gradient2)
+	background-image: linear-gradient($angle, $gradient1, $gradient2)
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
